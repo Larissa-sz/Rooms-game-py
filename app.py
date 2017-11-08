@@ -48,7 +48,7 @@ while dead == False:
   if stuff is not None:
     stuff.describe()
   
-  command = input("> ")
+  command = raw_input("> ")
   
   if command in ["north", "south", "east", "west"]:
     # Move in the given direction
