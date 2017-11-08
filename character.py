@@ -30,7 +30,7 @@ class Character():
 class Enemy(Character):
   
     def __init__(self, char_name, char_description):
-        Character.__init__(self)
+        Character.__init__(self, char_name, char_description)
         self.weakness = None
         
     def set_weakness(self, weakness):
@@ -53,7 +53,7 @@ class Enemy(Character):
 class Friend(Character):
   
   def __init__(self, char_name, char_description):
-    Character.__init__(self)
+    Character.__init__(self, char_name, char_description)
     self.feeling = None
   
   def hug(self):
